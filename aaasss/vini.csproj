@@ -1,0 +1,4 @@
+<Target Name="PrePublishTarget" AfterTargets="Publish">
+  <Exec Command="dotnet ef database update" />
+</Target>
+sslmode=Prefer;Trust Server Certificate=true
